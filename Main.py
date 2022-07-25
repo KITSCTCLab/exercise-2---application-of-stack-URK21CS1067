@@ -25,6 +25,10 @@ class Evaluate:
       True if it is empty, else returns False.
     """
       # Write your code here
+      if len(self.stack) == 0:
+        return True
+      else:
+        return False
 
 
   def pop(self):
@@ -34,6 +38,8 @@ class Evaluate:
       The data which is popped out if the stack is not empty.
     """
     # Write your code here
+     if not self.isEmpty():
+            self.stack.pop()
 
 
   def push(self, operand):
