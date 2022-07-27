@@ -26,9 +26,9 @@ class Evaluate:
     """
       # Write your code here
       if self.top == -1:
-          return True
+        return True
       else:
-          return False
+        return False
 
 
   def pop(self):
@@ -39,9 +39,8 @@ class Evaluate:
     """
     # Write your code here
      if not self.isEmpty():
-            self.stack.pop()
-
-
+        self.stack.pop()
+          
   def push(self, operand):
     """
     Push the operand to stack if the stack is not full.
@@ -50,9 +49,8 @@ class Evaluate:
     """
     # Write your code here
     if self.top != self.size_of_stack - 1:
-         self.stack.append(operand)
-
-
+      self.stack.append(operand)
+      
   def validate_postfix_expression(self, expression):
     """
     Check whether the expression is a valid postfix expression.
@@ -68,7 +66,7 @@ class Evaluate:
       if element.isnumeric():
         a = a + 1
       else:
-        b = b + 1
+          b = b + 1
     if b == a - 1:
       return True
     else:
