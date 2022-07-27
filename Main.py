@@ -50,7 +50,7 @@ class Evaluate:
     """
     # Write your code here
     if self.top != self.size_of_stack - 1:
-      self.stack.append(operand)
+         self.stack.append(operand)
 
 
   def validate_postfix_expression(self, expression):
